@@ -13,13 +13,13 @@ class PostVideoForm extends React.Component {
   }
 
   handleSubmit(e) {
-    console.log(this.props)
+    // console.log(this.props)
     e.preventDefault();
     this.props.createVideo(this.state, this.props.currentUser.id)
 
     this.redirectToShow()
   }
-z
+
   handleChange(key) {
     return e => {
       if (key === 'question' || key === 'experience' || key === 'industry') {
@@ -73,7 +73,7 @@ z
             <div className='vf-upload-container'>
               <input className='vf-upload' type="file" onChange={this.handleChange('file')} style={this.state.file ? { backgroundImage: `url(https://pinspire-seeds.s3.us-east-1.amazonaws.com/success.png)` } : { backgroundImage: `url(https://pinspire-seeds.s3.us-east-1.amazonaws.com/videoupload.png)`} }>
               </input>
-              <span className='upload-text'>Drag and drop your View to upload</span>
+              <span className='upload-text'>Drag and drop your video to upload</span>
               <button className='vf-submit' onClick={this.handleSubmit}>Submit</button>
             </div>
 
