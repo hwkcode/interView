@@ -86,7 +86,7 @@ class VideoIndex extends React.Component {
                 </div>
                
 
-                <h2 className='vi-question'><span className='trending'>Unconfident? Try This: </span>{questions[1]}</h2>
+                <h2 className='vi-question'><span className='trending'>Not Confident? Try This: </span>{questions[1]}</h2>
                 <div className='vi-row'>
                     <div className='vi-thumbnail'>
                         <div className='vi-img-wrapper'>
